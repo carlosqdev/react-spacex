@@ -1,6 +1,4 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React SpaceX 🚀 Demo [http://sdsdsd:3000](http://localhoddsst:3000)
 
 ## Available Scripts
 
