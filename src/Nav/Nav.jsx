@@ -9,6 +9,9 @@ function Nav() {
       <img className="nav__img" src={logo} alt="SPACEX" />
       <ul className="nav__menu">
         <li className="nav__item">
+          <Link className="nav__link" to="/">Inicio</Link>
+        </li>
+        <li className="nav__item">
           <Link className="nav__link" to="/ultimo">
             Ultimo lanzamiento
           </Link>

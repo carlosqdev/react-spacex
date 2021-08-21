@@ -15,7 +15,7 @@
 }
 .nav__menu {
   border: 1px solid blue;
-  width: 400px;
+  width: 450px;
   display: grid;
   grid-auto-flow: column;
   gap: 5px;

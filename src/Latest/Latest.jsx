@@ -1,8 +1,12 @@
 import React from 'react';
+import Nav from '../Nav/Nav';
 
 const Latest = () => {
   return (
-    <h1>Ultimo lanzamiento</h1>
+    <>
+      <Nav />
+      <h1>Ultimo lanzamiento</h1>
+    </>
   )
 }
 
