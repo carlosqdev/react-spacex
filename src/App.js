@@ -17,7 +17,14 @@ import All from './All/All';
 //   }
 // };
 
-
+const Home = () => {
+  return (
+    <>
+      <Nav />
+      <h1>Home</h1>
+    </>
+  )
+}
 
 
 function App() {
@@ -25,10 +32,10 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Nav />} />
-          <Route path="/ultimo" element={<Latest />} />
-          <Route path="/todos" element={<All />} />
-          <Route path="*" element={<Error404 />} />
+          <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
+          <Route path={`${process.env.PUBLIC_URL}/ultimo`} element={<Latest />} />
+          <Route path={`${process.env.PUBLIC_URL}/todos`} element={<All />} />
+          <Route path={`${process.env.PUBLIC_URL}*`} element={<Error404 />} />
         </Routes>
       </BrowserRouter>
     </>

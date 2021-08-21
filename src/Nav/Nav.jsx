@@ -9,15 +9,15 @@ function Nav() {
       <img className="nav__img" src={logo} alt="SPACEX" />
       <ul className="nav__menu">
         <li className="nav__item">
-          <Link className="nav__link" to="/">Inicio</Link>
+          <Link className="nav__link" to={`${process.env.PUBLIC_URL}/`}>Inicio</Link>
         </li>
         <li className="nav__item">
-          <Link className="nav__link" to="/ultimo">
+          <Link className="nav__link" to={`${process.env.PUBLIC_URL}/ultimo`}>
             Ultimo lanzamiento
           </Link>
         </li>
         <li className="nav__item">
-          <Link className="nav__link" to="/todos">
+          <Link className="nav__link" to={`${process.env.PUBLIC_URL}/todos`}>
             Todos los lanzamientos
           </Link>
         </li>
