@@ -1,17 +1,26 @@
-import React from 'react';
-import logo from '../img/Logo.svg';
-import './Nav.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../img/Logo.svg";
+import "./Nav.css";
 
 function Nav() {
   return (
     <nav className="nav">
       <img className="nav__img" src={logo} alt="SPACEX" />
       <ul className="nav__menu">
-        <li className="nav__item">Ultimo lanzamiento</li>
-        <li className="nav__item">Todos los lanzamientos</li>
+        <li className="nav__item">
+          <Link className="nav__link" to="/ultimo">
+            Ultimo lanzamiento
+          </Link>
+        </li>
+        <li className="nav__item">
+          <Link className="nav__link" to="/todos">
+            Todos los lanzamientos
+          </Link>
+        </li>
       </ul>
     </nav>
-  )
+  );
 }
 
 export default Nav;
