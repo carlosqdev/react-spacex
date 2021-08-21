@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from "./Nav/Nav";
 import Error404 from "./Error404/Error404";
+import Latest from './Latest/Latest';
+import All from './All/All';
 // import axios from "axios";
 
 // let apiEndPoint = "https://api.spacexdata.com/v4/launches/latest";
@@ -15,17 +17,8 @@ import Error404 from "./Error404/Error404";
 //   }
 // };
 
-const Latest = () => {
-  return (
-    <h1>Ultimo lanzamiento</h1>
-  )
-}
 
-const All = () => {
-  return (
-    <h1>Todos los lanzamiento</h1>
-  )
-}
+
 
 function App() {
   return (
