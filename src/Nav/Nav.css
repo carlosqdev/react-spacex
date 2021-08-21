@@ -1,5 +1,4 @@
 .nav {
-  border: 1px solid red;
   background-color: var(--color-primary);
   display: grid;
   grid-auto-flow: column;
@@ -9,12 +8,10 @@
   height: auto;
 }
 .nav__img {
-  border: 1px solid blue;
   width: 280px;
   height: auto;
 }
 .nav__menu {
-  border: 1px solid blue;
   width: 450px;
   display: grid;
   grid-auto-flow: column;
