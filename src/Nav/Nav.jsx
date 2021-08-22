@@ -6,7 +6,7 @@ import "./Nav.css";
 function Nav() {
   return (
     <nav className="nav">
-      <img className="nav__img" src={logo} alt="SPACEX" />
+      <img loading="lazy" className="nav__img" src={logo} alt="SPACEX" />
       <ul className="nav__menu">
         <li className="nav__item">
           <Link className="nav__link" to={`${process.env.PUBLIC_URL}/`}>Inicio</Link>
