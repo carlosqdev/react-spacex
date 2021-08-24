@@ -9,26 +9,38 @@ const Header = styled.header`
   flex-direction: column;
   align-items: center;
   gap: 1em;
-  /* border: 1px solid red; */
 `;
 
 const Title = styled.h1`
   font-size: 1.6em;
   font-weight: 700;
   text-align: center;
-  /* margin-top: 1em; */
 `;
 
 const NameMission = styled.h2`
   font-size: 1.5em;
   font-weight: 400;
   text-align: center;
-  /* margin: 1em 0; */
 `;
 
 const Time = styled.time`
   font-size: 1.5em;
   font-weight: 700;
+`;
+
+const Section = styled.section`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  padding: 1em;
+`;
+
+const Paragraph = styled.p`
+  font-size: 1.3em;
+  font-weight: 400;
+  line-height: 1.7;
 `;
 
 const Latest = () => {
@@ -54,30 +66,24 @@ const Latest = () => {
   return (
     <>
       <Nav />
-      <section>
+      <Section>
         <Header>
           <Title>Último lanzamiento</Title>
           <NameMission>{name}</NameMission>
           <Time dateTime="2011-11-18T14:54:39.929">{date}</Time>
         </Header>
-        <section>
-          <p>{details}</p>
-        </section>
-        <section>
+        <Section>
+          <Paragraph>{details}</Paragraph>
+        </Section>
+        <Section>
           {flickr.map((img, index) => (
             <figure key={index}>
-              <img
-                loading="lazy"
-                src={img}
-                alt={name}
-                width="100"
-                height="100"
-              />
+              <img loading="lazy" src={img} alt={name} width="250" />
               <figcaption>{name}</figcaption>
             </figure>
           ))}
-        </section>
-      </section>
+        </Section>
+      </Section>
     </>
   );
 };
