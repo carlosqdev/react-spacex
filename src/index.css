@@ -10,6 +10,7 @@
 :root {
   --color-primary: #000;
   --color-secondary: #fff;
+  --color--gray: rgb(71, 71, 73);
   --font-primary: 'Open Sans', sans-serif;
 }
 
