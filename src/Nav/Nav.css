@@ -64,10 +64,10 @@
     grid-auto-flow: row;
     background-color: var(--color--gray);
     text-align: center;
-    clip-path: circle(0 at center);
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
     transition: clip-path 1s ease-in-out;
   }
   .nav__input:checked + .nav__menu {
-    clip-path: circle(100% at center);
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
   }
 }

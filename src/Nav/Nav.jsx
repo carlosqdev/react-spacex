@@ -9,7 +9,7 @@ function Nav() {
     <nav className="nav">
       <img loading="lazy" className="nav__logo" src={logo} alt="SPACEX" />
       <label className="nav__label" htmlFor="menu">
-        <img src={menu} alt="menu" />
+        <img loading="lazy" src={menu} alt="menu" />
       </label>
       <input type="checkbox" id="menu" className="nav__input" />
       <ul className="nav__menu">
