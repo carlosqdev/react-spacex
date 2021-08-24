@@ -1,18 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Nav from "./Nav/Nav";
+import Home from "./Home/Home";
 import Error404 from "./Error404/Error404";
 import Latest from "./Latest/Latest";
 import All from "./All/All";
-
-const Home = () => {
-  return (
-    <>
-      <Nav />
-      <h1>Home</h1>
-    </>
-  );
-};
 
 function App() {
   return (
