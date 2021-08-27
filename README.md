@@ -2,7 +2,7 @@
 
 React SpaceX es una single page aplication, que utiliza el API de SpaceX. Aquí podemos enterarnos de los últimos lanzamientos y de todos los lanzamientos que ha realizado SpaceX
 
-![demo](https://mega.nz/file/4dJHgSYa#lhek4yDC7DKaREFWc6FwrhVgwKI_obonSXjgcrpCQx0)
+![demo](https://github.com/carlosqdev/react-spacex/blob/main/react-spacex-preview.png?raw=true)
 
 ## 💿 [Ver demostración](https://carlosqdev.github.io/react-spacex/)
 
@@ -19,4 +19,7 @@ React SpaceX es una single page aplication, que utiliza el API de SpaceX. Aquí 
 2. Ve a la carpeta del proyecto `cd react-spacex`
 3. Instalar dependencias `npm install`
 
-## 
+## 📜 Scripts en package.json (ejecutar desde terminal).
+1. start: `npm run start` Inicia la aplicación en tu localhost. 
+2. predeploy: `npm run predeploy` Crea una carpeta llamada 📁build. Con la aplicación lista para enviarse a producción.
+3. deploy: `npm run deploy` Envia la carpeta 📁build a una rama en GitHub. Llamada gh-pages.
