@@ -21,11 +21,6 @@ function Nav() {
             Ultimo lanzamiento
           </Link>
         </li>
-        <li className="nav__item">
-          <Link className="nav__link" to={`${process.env.PUBLIC_URL}/todos`}>
-            Todos los lanzamientos
-          </Link>
-        </li>
       </ul>
     </nav>
   );
