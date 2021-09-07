@@ -31,7 +31,7 @@ const Home = () => {
       <Nav />
       <Title>React.js application consuming SPACEX API</Title>
       <Section>
-        <Img src={image} alt="SpaceX" />
+        <Img loading="lazy" src={image} alt="SpaceX" />
       </Section>
     </>
   );
