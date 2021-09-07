@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Nav from "../Nav/Nav";
 import axios from "axios";
 import styled from "styled-components";
+import youtube from '../img/youtube.svg';
 
 const Header = styled.header`
   padding: 1em 0;
@@ -43,9 +44,19 @@ const Paragraph = styled.p`
   line-height: 1.7;
 `;
 
+const Img = styled.img`
+  border: 1px solid var(--color-secondary);
+  border-radius: 50%;
+  cursor: pointer;
+  &:hover {
+    border-color: var(--color-red);
+  }
+`;
+
 const Latest = () => {
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
+  const [webCast, setWebCast] = useState("");
   const [details, setDetails] = useState("");
   const [flickr, setFlickr] = useState([]);
 
@@ -59,6 +70,7 @@ const Latest = () => {
         setName(response.data.name);
         setDate(response.data.date_local);
         setDetails(response.data.details);
+        setWebCast(response.data.links.webcast);
       });
     setFlickr(ar);
   }, []);
@@ -71,6 +83,12 @@ const Latest = () => {
           <Title>Último lanzamiento</Title>
           <NameMission>{name}</NameMission>
           <Time dateTime="2011-11-18T14:54:39.929">{date}</Time>
+          <Paragraph>
+            Ver video en YouTube
+          </Paragraph>
+          <a href={webCast} target="_blank" rel="noopener noreferrer">
+            <Img loading="lazy" src={youtube} alt="Logo YouTube"></Img>
+          </a>
         </Header>
         <Section>
           <Paragraph>{details}</Paragraph>
