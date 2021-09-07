@@ -1,6 +1,6 @@
 # React SpaceX. ![Licence_badge](https://img.shields.io/github/license/carlosqdev/react-spacex?style=for-the-badge)
 
-React SpaceX es una single page aplication, que utiliza el API de SpaceX. Aquí podemos enterarnos de los últimos lanzamientos y de todos los lanzamientos que ha realizado SpaceX
+React SpaceX es una single page aplication, que utiliza el API de SpaceX. Aquí podemos enterarnos de los últimos lanzamientos que ha realizado SpaceX.
 
 ![demo](https://github.com/carlosqdev/react-spacex/blob/main/react-spacex-preview.png?raw=true)
 
